@@ -2,10 +2,11 @@
 
 include('db.php');
 
-$Pagename="Buy Product";
+$pagename="Buy Product";
 echo "<link rel=stylesheet type=text/css href=mystylesheet.css>";
 echo "<title>".$pagename."</title>";
 echo "<body>";
+include ("headfile.html");
 echo "<h4>".$pagename."</h4>";
 $productid=$_GET['u_prod_id'];
 $SQL="select prodId, prodName,prodDescripShort, prodPicNameSmall,prodPrice from Product where prodId='$productid'";
